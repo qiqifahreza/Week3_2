@@ -1,4 +1,4 @@
-public class Makanan {
+public class Makanan extends Produk {
     private int expired;
     public Makanan(String nama, double harga, int stok, String kategori, int expired) {
         super(nama, harga, stok, kategori);
