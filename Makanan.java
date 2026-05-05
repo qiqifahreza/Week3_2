@@ -1,10 +1,12 @@
-public class Makanan {
+public class Makanan extends Produk {
     private int expired;
     public Makanan(String nama, double harga, int stok, String kategori, int expired) {
         super(nama, harga, stok, kategori);
         this.expired = expired;
     }
-    public void tampilkanData() {
+    @Override
+    public void tampilInfo() {
+        System.out.println("Kategori: " + kategori);
         super.tampilInfo();
         System.out.println("Masa Expired: " + expired + " Hari");
     }
@@ -13,6 +15,23 @@ public class Makanan {
             System.out.println("Masa expired harus lebih dari negatif.");
         } else {
             this.expired = expired;
+        }
+    }
+
+    public void setExpired(int expired, String type) {
+        if (type.equals("Nasi")) {
+            if (expired > 4) {
+                System.out.println("Masa expired untuk nasi tidak boleh negatif.");
+            } else {
+                this.expired = expired;
+            }
+        }
+        else {
+            if (expired < 2) {
+                System.out.println("Masa expired harus lebih dari negatif.");
+            } else {
+                this.expired = expired;
+            }
         }
     }
 }

@@ -4,7 +4,9 @@ public class Elektronik extends Produk {
         super(nama, harga, stok, kategori);
         this.garansi = garansi;
     }
-    public void tampilkanData() {
+    @Override
+    public void tampilInfo() {
+        System.out.println("Kategori: " + kategori);
         super.tampilInfo();
         System.out.println("Masa Garansi: " + garansi + " Hari");
     }
