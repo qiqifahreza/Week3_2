@@ -12,6 +12,22 @@ public class Produk {
         this.stok = stok;
         this.kategori = kategori;
     }
+    public String getNama() {
+        return nama;
+    }
+
+    public double getHarga() {
+        return harga;
+    }
+    public int getStok() {
+        return stok;
+    }
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+    public void setStok(int stok) {
+        this.stok = stok;
+    }
 
     public void tampiInfo() {
         System.out.println("Nama Produk: " + nama);
