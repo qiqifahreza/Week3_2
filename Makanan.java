@@ -3,6 +3,7 @@ public class Makanan extends Produk {
     public Makanan(String nama, double harga, int stok, String kategori, int expired) {
         super(nama, harga, stok, kategori);
         this.expired = expired;
+        
     }
     @Override
     public void tampilInfo() {
