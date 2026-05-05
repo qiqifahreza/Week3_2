@@ -29,7 +29,7 @@ public class Produk {
         this.stok = stok;
     }
 
-    public void tampiInfo() {
+    public void tampilInfo() {
         System.out.println("Nama Produk: " + nama);
         System.out.println("Harga Produk: " + harga);
         System.out.println("Stok Produk: " + stok);
