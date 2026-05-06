@@ -32,6 +32,10 @@ public class Elektronik extends Produk {
     public double hitungHargaSetelahPajak(int jumlahBeli) {
         return hitungTootalHarga(jumlahBeli) + hitungPajak(jumlahBeli);
     }
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.20;
+    }
 
 
     }
