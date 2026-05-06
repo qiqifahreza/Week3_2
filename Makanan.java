@@ -1,8 +1,11 @@
 public class Makanan extends Produk {
-    private int expired;
-    public Makanan(String nama, double harga, int stok, String kategori, int expired) {
-        super(nama, harga, stok, kategori);
-        this.expired = expired;
+    private String kadaluarsa;
+    private String kategori;
+    public Makanan(String nama, double harga, int stok, String kategori, String kadaluarsa) {
+        super(nama, harga, stok);
+        this.kadaluarsa = kadaluarsa;
+        this.kategori = kategori;
+
         
     }
     @Override

@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Elektronik elektronik1 = new Elektronik("Laptop", 150000.0, 10, "Elektronik", 5);
-        elektronik1.setGaransi(0);
-        elektronik1.tampilInfo();
+        Elektronik laptop = new Elektronik("laptop Asus",850000.0,10 ,"Asus",2 );
+        Elektronik Hp = new Elektronik("Hp Samsung", 3200000.0, 25, "Samsung", 1);
+
+        Makanan indomie = new Makanan("Indomie Goreng", 3500.0, 100, "Mie Instant", "2026-12-01");
 
     }
 }
