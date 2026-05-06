@@ -31,6 +31,17 @@ public class Main {
         System.out.println("Total: Rp " + (Hp.hitungTootalHarga(2) + pajakHpCustom));
 
         System.out.println("==== Rincian Diskon Makanan ====");
+        System.out.println("Indomie x10 (Diskon Otomatis)");
+        System.out.println("Subtotal: Rp " + indomie.hitungTootalHarga(10));
+        System.out.println("Diskon: Rp " + indomie.hitungDiskon(10));
+        System.out.println("Total: Rp " + indomie.hitungHargaSetelahDiskon(10));
+
+        System.out.println("\nRoti x5 (Diskon Custom 15%)");
+        System.out.println("Subtotal: Rp " + roti.hitungTootalHarga(5));
+        System.out.println("Diskon: Rp " + roti.hitungDiskon(5, 15));
+        System.out.println("Total: Rp " + (roti.hitungTootalHarga(5) - roti.hitungDiskon(5, 15)));
+
+        
     }
     
 }
