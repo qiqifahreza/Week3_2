@@ -35,6 +35,11 @@ public class Makanan extends Produk {
         return hitungTootalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
     }
 
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.10;
+    }
+
 
 
 }
