@@ -8,6 +8,15 @@ public class Makanan extends Produk {
 
         
     }
+    public String getKadaluarsa() {
+        return kadaluarsa;
+    }
+    public String getKategori() {
+        return kategori;
+    }
+
+
+
     @Override
     public void tampilInfo() {
         System.out.println("Kategori: " + kategori);
