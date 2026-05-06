@@ -5,7 +5,7 @@ abstract class Produk {
     public double harga;
     public int stok;
 
-    public Produk(String nama, double harga, int stok, String kategori) {
+    public Produk(String nama, double harga, int stok) {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
