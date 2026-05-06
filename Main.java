@@ -5,5 +5,13 @@ public class Main {
 
         Makanan indomie = new Makanan("Indomie Goreng", 3500.0, 100, "Mie Instant", "2026-12-01");
         Makanan roti = new Makanan("Roti Tawar", 3500.0, 50, "Roti", "2026-04-30");
+    
+        System.out.println("==== Daftar Produk ====");
+        laptop.tampilInfo();
+        Hp.tampilInfo();
+
+        indomie.tampilInfo();
+        roti.tampilInfo();
     }
+    
 }
