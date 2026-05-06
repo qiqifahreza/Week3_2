@@ -15,7 +15,14 @@ public class Elektronik extends Produk {
         return garansiTahun;
     }
 
-    
+    @Override
+    public void tampilInfo() {
+        System.out.println("[ELEKTRONIK");
+        System.out.println("Nama: "+ getNama());
+        System.out.println("Merek: " + merek);
+        System.out.println("Garansi: " + garansiTahun + " Tahun");
+        System.out.println("=================\n");
+    }
 
     }
 
