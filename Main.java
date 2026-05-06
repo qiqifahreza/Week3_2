@@ -12,6 +12,17 @@ public class Main {
 
         indomie.tampilInfo();
         roti.tampilInfo();
+
+        System.out.println("==== Rincian Pajak ====");
+
+        double pajakLaptop = (1);
+        double totalLaptop = laptop.hitungHargaSetelahPajak(1);
+
+        System.out.println("Laptop X1 (PPN Standar 11%)");
+        System.out.println("Subtotal: Rp " + laptop.hitungTootalHarga(1));
+        System.out.println("Pajakk: Rp " + pajakLaptop);
+        System.out.println("Total: Rp" + totalLaptop);
+        
     }
     
 }
