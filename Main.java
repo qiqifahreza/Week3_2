@@ -29,6 +29,8 @@ public class Main {
         System.out.println("Subtotal: Rp" + Hp.hitungTootalHarga(2));
         System.out.println("Pajak: Rp " + pajakHpCustom);
         System.out.println("Total: Rp " + (Hp.hitungTootalHarga(2) + pajakHpCustom));
+
+        System.out.println("==== Rincian Diskon Makanan ====");
     }
     
 }
