@@ -41,7 +41,11 @@ public class Main {
         System.out.println("Diskon: Rp " + roti.hitungDiskon(5, 15));
         System.out.println("Total: Rp " + (roti.hitungTootalHarga(5) - roti.hitungDiskon(5, 15)));
 
-        
+        System.out.println("\n==== Transaksi ====");
+        laptop.beli(1);
+        Hp.beli(2);
+        indomie.beli(10);
+        roti.beli(5);
     }
     
 }
